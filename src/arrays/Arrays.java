@@ -1,6 +1,7 @@
 
 package arrays;
 
+import java.util.Scanner;
 import packagetwo.Class1;
 
 
@@ -10,18 +11,18 @@ public class Arrays {
     public static void main(String[] args) {
         
         
-        Class1 class1 = new Class1();
-        Enemi enemi = new Enemi();
+        Scanner entrada = new Scanner (System.in);
         
-        enemi.edad = 2;
-        class1.nombre = "dsd";
-        
-        class1.setEdad(-23);
-        
-        
-        System.out.println(class1);
-        System.out.println(class1.getEdad());
+        int []numbers = new int[6];
        
+        for(int i = 0 ; i < numbers.length;i ++){
+            System.out.println("Digite un numero");
+            numbers[i]=entrada.nextInt();
+        }
+        
+        for(int i = 0 ; i < numbers.length;i ++){
+            System.out.println(numbers[i]);
+        }
     }
   
 }
